@@ -1,6 +1,18 @@
+$border: solid 1px #a0a0a0;
+
 .container{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 16px;
+    height: 100%;
+    border-right: $border;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        border-bottom: $border;
+        border-right: none;
+    }
 }

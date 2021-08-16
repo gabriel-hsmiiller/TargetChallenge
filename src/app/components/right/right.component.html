@@ -1,3 +1,10 @@
 <div class="container">
-    <span>right</span>
+    <h3>Filter</h3>
+    <div class="img-container">
+        <img src="https://http.cat/101" width="250" (click)="filterValues()">
+    </div>
+    <div class="values">
+        <span style="margin: 4px;" *ngFor="let val of showValues">{{ val }}</span>
+    </div>
+    <input [(ngModel)]="value">
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FibonacciService } from 'src/app/services/fibonacci.service'
 
 @Component({
   selector: 'app-left',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftComponent implements OnInit {
 
-  constructor() { }
+  fibonacciValue: number = 1;
+
+  constructor(private fibonacciService: FibonacciService) { }
 
   ngOnInit(): void {
+  }
+
+  calculate(){
+    this.fibonacciValue = this.fibonacciService.nextPosition();
   }
 
 }

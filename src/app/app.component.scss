@@ -1,5 +1,5 @@
 .container{
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
 
@@ -10,4 +10,10 @@
 
 .container > * {
     flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
 }

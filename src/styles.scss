@@ -1,8 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
 html, body{    
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #098098;
+    color: white;
+    cursor: pointer;
+    transition: all .1s ease-out;
+
+    &:hover{
+        background-color: darken(#098098, 15);
+    }
+}
+
+input{
+    border: solid 1px #333;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
 }

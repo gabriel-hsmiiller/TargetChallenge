@@ -1,3 +1,8 @@
 <div class="container">
-    <span>middle</span>
+    <h3>Image toggling</h3>
+    <div class="img-container">
+        <img src="https://http.cat/404" *ngIf="showImage" width="250">
+    </div>
+    <span>{{ showImage ? 'Visible' : 'Invisible' }}</span>
+    <button (click)="toggleImage()">{{ showImage ? 'Hide' : 'Show' }} it!</button>
 </div>

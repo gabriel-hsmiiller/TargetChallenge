@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiddleComponent implements OnInit {
 
+  showImage: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleImage(){
+    this.showImage = !this.showImage;
   }
 
 }
